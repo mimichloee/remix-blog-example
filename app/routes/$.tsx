@@ -1,7 +1,7 @@
 import { getMDXComponent } from "mdx-bundler/client";
 import { useMemo } from "react";
 import { json, Link, LoaderFunction, useLoaderData } from "remix";
-import { getPost } from "~/utils/post";
+import { getPost } from "~/utils/post.server";
 
 type LoaderData = {
   frontmatter: any;

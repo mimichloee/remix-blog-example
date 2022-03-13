@@ -1,7 +1,7 @@
 import { Link, useLoaderData } from "remix";
 
-import { getPosts } from "~/utils/post";
-import type { Post } from "~/utils/post";
+import { getPosts } from "~/utils/posts";
+import type { Post } from "~/utils/posts";
 
 export const loader = async () => {
   return getPosts();
