@@ -1,7 +1,7 @@
 import fs from "fs/promises";
 import path from "path";
-import { bundleMDX } from "./mdx.server";
 import haskell from "highlight.js/lib/languages/haskell";
+import { bundleMDX } from "mdx-bundler";
 
 export async function getPost(slug: string) {
   const source = await fs.readFile(
